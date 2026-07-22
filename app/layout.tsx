@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CommandPalette } from '@/components/CommandPalette';
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -72,6 +73,7 @@ export default function RootLayout({
             <CommandPalette />
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
